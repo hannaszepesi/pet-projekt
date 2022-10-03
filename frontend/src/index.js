@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Animals from "./components/Animals";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Starter from "./components/Starter";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+          <Routes>
+              <Route path="/" element={<App />}>
+                  <Route index element={<Starter />}/>
+                  <Route path="orokbefogadhato-allatok" element={<Animals/>}/>
+              </Route>
+          </Routes>
+      </BrowserRouter>
   </React.StrictMode>
 );
 
