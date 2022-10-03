@@ -92,12 +92,11 @@ export const animalCard = {
 }
 
 export const animalCardTypography = {
-    margin: 2,
-    height: "90%",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-    border: "2px solid rgba(252,158,69,1)"
+    textTransform: "uppercase",
+        fontFamily: 'monospace',
+    fontWeight: 700,
+    color: "rgba(159,38,124,1)",
+    marginBottom: 0
 }
 
 export const responsiveImage = {width: {xs: "auto", s: "auto", md: "400px", lg: "400px"}}

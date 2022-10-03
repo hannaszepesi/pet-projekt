@@ -8,9 +8,10 @@ import Puli from '../static/images/Puli.jpg';
 import Bernathegyi from '../static/images/bernathegyi-kolyok.jpg'
 import Grid from "@mui/material/Unstable_Grid2";
 import Nemetjuhasz from '../static/images/nemetjuhasz.jpg'
-import {animalCard, animalCardTypography, responsiveImage} from "./Styles";
+import {animalCard, animalCardTypography} from "./Styles";
 
 export default function AnimalCard() {
+    const responsiveImage = {width: {xs: "auto", s: "auto", md: "400px", lg: "400px"}}
     return (
         <Grid container justifyContent="center" paddingTop="1em">
             <Grid container sx={responsiveImage}>
