@@ -21,11 +21,7 @@ const DetailedSearch = (props) => {
                 disablePortal
                 id="combo-box-demo"
                 options={cityNames.map((option) => option.name)}
-                sx={{
-                    padding: 2, maxWidth: 300, fontSize: 50, '& .MuiAutocomplete-input, & .MuiInputLabel-root,': {
-                        fontSize: 22
-                    }, '& .MuiSvgIcon-root': {fontSize: "2em"}
-                }}
+                sx={{padding: 2, maxWidth: 300}}
                 renderInput={(params) => <TextField placeholder="Összes" {...params} label="Település"/>}
             />);
     }
