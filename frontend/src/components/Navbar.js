@@ -101,7 +101,7 @@ const Navbar = () => {
               </MenuItem>
             </Menu>
           </Box>
-          <PetIcon sx={{ display: { xs: "flex", sm: "none" }, mr: 1 }} />
+          <IconButton component={Link} to="/" sx={{ display: { xs: "flex", sm: "none" }, mr: 1 }}><PetIcon sx={{color: "white"}} /></IconButton>
           <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "flex" } }}>
             <Button
               component={Link}
