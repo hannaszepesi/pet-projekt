@@ -1,14 +1,14 @@
-import './App.css';
-import Navbar from './components/Navbar'
-import {Outlet} from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import { Outlet } from "react-router-dom";
 import Box from "@mui/material/Box";
-import {responsiveWindow} from "./components/Styles";
+import { responsiveWindow } from "./components/Styles";
 
 function App() {
   return (
     <Box sx={responsiveWindow}>
-        <Navbar/>
-        <Outlet/>
+      <Navbar />
+      <Outlet />
     </Box>
   );
 }
